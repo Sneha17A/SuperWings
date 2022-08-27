@@ -1,0 +1,1007 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Russo+One&family=Yellowtail&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Russo+One&family=Stoke:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  /*width: 320;*/
+}
+a{
+    text-decoration: none;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: rgb(140, 20, 132);
+  height: 80px;
+  width: 100%;
+  /*position: fixed;*/
+}
+label.logo{
+  line-height: 70px;
+  margin-left: 30px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  padding-top: 30px;
+}
+nav ul li{
+  display: inline-block;
+  /*line-height: 80px;*/
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.checkbtn {
+  /*font-size: 30px;*/
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 450px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    /*font-size: 16px;*/
+    display: none;
+    text-decoration: none;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  nav ul li a{
+    color: white;
+    margin: 0 5px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+/*title*/
+.special{
+    font-family: 'Anton', sans-serif;
+    color: #00008B;
+}
+h1{
+  color: #BABF1D;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Stoke', serif;
+  /*font-family: 'Anton', sans-serif;*/
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+h1 span{
+  transition: .5s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+/*h1:hover span:nth-child(1):after{
+  content: "'";
+}*/
+h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+h1:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px rgb(140, 20, 132),
+               0 0 20px rgb(140, 20, 132), 
+               0 0 40px rgb(140, 20, 132);
+}
+.title{
+    text-align: center;
+    padding: 250px;
+}
+.titlebox{
+    background-image: url('frontpage.jpg');
+    background-repeat: no-repeat;
+}
+@media (max-width: 450px){
+    .title{
+        padding: 50px; 
+    }
+    .title h1{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Anton', sans-serif;
+    }
+    .title h4,li{
+        font-size: 15px;
+    }
+    .titlebox{
+        background: url('frontpage - Copy.jpg');
+    }
+    .org-name span{
+        display: none;
+        visibility: hidden;
+        color: #C20687;
+    }
+}
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+.wordCarousel
+{
+    font-size: 30px;
+    font-weight: 100;
+    color: #006400;
+}
+.html div
+{
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+}
+li
+{
+    font-family: serif;
+    color: black;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+}
+.flip2
+{
+    animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip3
+{
+    animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip4
+{
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+
+}
+@keyframes flip2
+{
+    0%
+    {
+        margin-top: -180px;
+    }
+    5%
+    {
+        margin-top: -90px;
+    }
+    50%
+    {
+        margin-top: -90px;
+    }
+    55%
+    {
+        margin-top: 0px;
+    }
+    99.99%
+    {
+        margin-top: 0px;
+    }
+    100%
+    {
+        margin-top: -270px;
+    }
+}
+@keyframes flip3
+{
+    0%
+    {
+        margin-top: -270px;
+    }
+    5%
+    {
+        margin-top: -180px;
+    }
+    33%
+    {
+        margin-top: -180px;
+    }
+    38%
+    {
+        margin-top: -90px;
+    }
+    66%
+    {
+        margin-top: -90px;
+    }
+    71%
+    {
+        margin-top: 0px;
+    }
+    99.99%
+    {
+        margin-top: 0px;
+    }
+    100%
+    {
+        margin-top: -270px;
+    }
+}
+@keyframes flip4
+{
+    0%
+    {
+        margin-top: -360px;
+    }
+    5%
+    {
+        margin-top: -270px;
+    }
+    25%
+    {
+        margin-top: -270px;
+    }
+    30%
+    {
+        margin-top: -180px;
+    }
+    50%
+    {
+        margin-top: -180px;
+    }
+    55%
+    {
+        margin-top: -90px;
+    }
+    75%
+    {
+        margin-top: -90px;
+    }
+    80%
+    {
+        margin-top: 0px;
+    }
+    99.99%
+    {
+        margin-top: 0px;
+    }
+    100%
+    {
+        margin-top: -270px;
+    }
+}
+.body, .html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.body
+{
+    font-family: "Roboto Condensed", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background: #333;*/
+}
+
+
+
+/*slideshow*/
+* {box-sizing: border-box}
+/*body {font-family: Verdana, sans-serif; margin:0}*/e;}
+.mySlides{
+    display: none;
+    /*width: 1000px;*/
+}
+.mySlides img{
+    width: 1400px;
+    align-items: center;
+}
+/* Slideshow container */
+.slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+@media (max-width: 450px){
+    .mySlides img{
+        width: 425px;
+    }
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*section*/
+.orgname{
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    /*font-family: 'Permanent Marker', cursive;*/
+    font-family: 'Stoke', serif;
+}
+.org-name{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-family: 'Russo One', sans-serif;
+    color: #C20687;
+}
+.org-exp1{
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    align-items: center;
+    text-align: justify;
+}
+.org-exp{
+    text-align: center;
+    padding: 30px;
+    /*align-items: center;*/
+    text-align: justify;
+}
+.img-exp{
+    /*font-family: 'Yellowtail', cursive;*/
+    font-family: 'Stoke', serif;
+    padding: 20px;
+    font-size: 20px;
+}
+.poster{
+    height: 500px;
+    width: 500px;
+}
+@media (max-width: 450px){
+    .poster{
+        margin-left: 0;
+        width: 300px;
+    }
+    .img{
+        width: 300px;
+    }
+    .org-exp1{
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+    .body{
+        display: none;
+    }
+}
+
+/*extra content*/
+.extra-content {
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.extra-content p{
+    text-align: justify;
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter h3,h2 {
+  color: #C20687;
+  padding: 20px;
+  font-family: 'Russo One', sans-serif;
+  align-items: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end;
+}
+.typewriter h2{
+    display: none;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+@media (max-width: 450px){
+    .typewriter h3{
+        display: none;
+    }
+    .typewriter h2{
+        display: block;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .about-us{
+        text-align: justify;
+    }
+}
+.about-us{
+    text-align: justify;   
+}
+
+/*diploma course*/
+
+.diploma-section{
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diploma-section:nth-child(1) {
+  color: #e0ffff;
+}
+.diploma-section:nth-child(2) {
+  color: #42455a;
+  background: #e0ffff;
+}
+.diploma-section:nth-child(3) {
+  color: #e0ffff;
+}
+.diploma-section:nth-child(4) {
+  color: #42455a;
+  background: #e0ffff;
+}
+/*.diploma-section .container {
+  margin: 20px;
+}*/
+
+/*.diploma-section h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}*/
+.diploma-section .text-container {
+  display: flex;
+}
+.diploma-section .text-container .text-box {
+  margin: 10px;
+  padding: 20px;
+  background: #00c2cb;
+}
+/*.diploma-section .text-container .text-box h4,h5{
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}*/
+
+@media (max-width: 900px) {
+/*  .diploma-section h4,h5 {
+    font-size: 2rem;
+    text-align: center;
+  }*/
+/*  .diploma-section .text-container {
+    flex-direction: column;
+  }*/
+}
+.button{
+    margin: 10px;
+}
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.gallery{
+    padding: 20px;
+    margin: 50px;
+}
+.org{
+    padding: 5px;
+    text-align: center;
+}
+
+.footer{
+    background-color: rgb(140, 20, 132);
+    padding-bottom: 30px;
+    color: white;
+}
+.footer h5{
+    text-align: center;
+    padding: 30px;
+}
+.footer i{
+    float: right;
+}
+@media (max-width: 450px){
+    .footer i{
+        float: left;
+    }
+}
+.hover{
+        width: 90%;
+        padding: 20px;
+        /*margin: 100px auto;*/
+        /*background: #ddd;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .box{
+       /* width: 250px;
+        height: 300px;
+        background: orange;
+        margin: 0px 10px;*/
+        transition: 1s;
+    }
+    .box:hover{
+        transform: scale(0.9);
+        /*background: #ff800a;*/
+        z-index: 2;
+        box-shadow: 2px 2px 2px #000;   
+    }
+/*.wrapper{
+  display: inline-flex;
+}*/
+.wrapper .icon{
+  /*margin: 0 20px;*/
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span{
+  display: block;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i{
+  line-height: 60px;
+  font-size: 25px;
+}
+.wrapper .icon .tooltip{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.icon .tooltip:before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-75%) rotate(45deg);
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1);
+}
+.wrapper .icon:hover span{
+  color: #fff;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before{
+  background: #3B5999;
+}
+.image {
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(3px);
+}
+
+.image__overlay--primary {
+    /*background: #009578;*/
+    background: rgb(140, 20, 132);
+    padding: 30px;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+@media (max-width: 450px){
+    .image{
+        position: relative;
+    width: 200px;
+    }
+    /*.hover{
+        margin: 2px;
+    }*/
+}
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 30px;
+}
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  /*color: #fff;*/
+  color: #06952F;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+@media (max-width: 450px){
+    .waviy{
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+.textdesign{
+    text-align: center;
+    padding: 20px;
+}
+.textdesign:hover{
+    color: rgb(140, 20, 132);
+    font-size: 25px;
+}
+.piller{
+    padding: 20px;
+    margin: 50px;
+    background-color: pink;
+    background-image: linear-gradient(to right, green , pink);
+}
+/*form*/
+.form{
+  margin: 50px 300px;
+}
+@media (max-width: 450px){
+    .form{
+        margin: 10px;
+    }
+}
+/*whatsapp*/
+.whatsapp_float{
+    position: fixed;
+    bottom: 40px;
+    /*right: 20px;*/
+    right: 10px;
+}
+.whatsapp_float_btn{
+    border-radius: 20px;
+    width: 50px;
+}
+@media (max-width: 450px){
+    .whatsapp_float{
+        right: 30px;
+    }
+}
+/*icon*/
+.icon{
+    width: 100px;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
