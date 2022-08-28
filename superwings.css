@@ -99,6 +99,12 @@ nav ul li a{
     font-family: 'Anton', sans-serif;
     color: #00008B;
 }
+
+@media (max-width: 450px){
+    .special{
+        text-align: left;
+    }
+}
 h1{
   color: #BABF1D;
   font-size: 100px;
@@ -639,6 +645,9 @@ li
   justify-content: center;
   align-items: center;
 }
+.color{
+    background: pink;
+}
 .diploma-section:nth-child(1) {
   color: #e0ffff;
 }
@@ -656,7 +665,15 @@ li
 /*.diploma-section .container {
   margin: 20px;
 }*/
+.founder{
+    margin: 30px;
+}
 
+@media (max-width: 900px){
+    .founder{
+        margin: 7px;
+    }
+}
 /*.diploma-section h2 {
   font-size: 40px;
   text-align: center;
@@ -863,7 +880,6 @@ li
     position: relative;
     width: 400px;
 }
-
 .image__img {
     display: block;
     width: 100%;
@@ -969,7 +985,7 @@ li
     padding: 20px;
     margin: 50px;
     background-color: pink;
-    background-image: linear-gradient(to right, green , pink);
+    /*background-image: linear-gradient(to right, green , pink);*/
 }
 /*form*/
 .form{
